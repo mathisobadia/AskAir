@@ -1,0 +1,203 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@layer base {
+
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+    font-feature-settings: "rlig" 1, "calt" 1;
+  }
+/* 
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 240 10% 3.9%;
+    --card: 0 0% 100%;
+    --card-foreground: 240 10% 3.9%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 240 10% 3.9%;
+    --primary: 142.1 76.2% 36.3%;
+    --primary-foreground: 355.7 100% 97.3%;
+    --secondary: 240 4.8% 95.9%;
+    --secondary-foreground: 240 5.9% 10%;
+    --muted: 240 4.8% 95.9%;
+    --muted-foreground: 240 3.8% 46.1%;
+    --accent: 240 4.8% 95.9%;
+    --accent-foreground: 240 5.9% 10%;
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 240 5.9% 90%;
+    --input: 240 5.9% 90%;
+    --ring: 142.1 76.2% 36.3%;
+    --radius: 0.3rem;
+  }
+  .dark {
+    --background: 20 14.3% 4.1%;
+    --foreground: 0 0% 95%;
+    --card: 24 9.8% 10%;
+    --card-foreground: 0 0% 95%;
+    --popover: 0 0% 9%;
+    --popover-foreground: 0 0% 95%;
+    --primary: 142.1 70.6% 45.3%;
+    --primary-foreground: 144.9 80.4% 10%;
+    --secondary: 240 3.7% 15.9%;
+    --secondary-foreground: 0 0% 98%;
+    --muted: 0 0% 15%;
+    --muted-foreground: 240 5% 64.9%;
+    --accent: 12 6.5% 15.1%;
+    --accent-foreground: 0 0% 98%;
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 0 85.7% 97.3%;
+    --border: 240 3.7% 15.9%;
+    --input: 240 3.7% 15.9%;
+    --ring: 142.4 71.8% 29.2%;
+  } */
+
+
+
+
+
+  /* :root  {
+    --background: 203 28% 95%;
+    --foreground: 203 5% 10%;
+    --card: 203 28% 91%;
+    --card-foreground: 203 5% 15%;
+    --popover: 203 28% 95%;
+    --popover-foreground: 203 95% 10%;
+    --primary: 203 71% 30%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 203 28% 90%;
+    --secondary-foreground: 0 0% 0%;
+    --muted: 165 28% 91%;
+    --muted-foreground: 203 5% 40%;
+    --accent: 165 28% 90%;
+    --accent-foreground: 203 5% 15%;
+    --destructive: 0 50% 50%;
+    --destructive-foreground: 203 5% 91%;
+    --border: 203 28% 82%;
+    --input: 203 28% 50%;
+    --ring: 203 71% 30%;
+    --radius: 0.5rem;
+  } */
+  /* .dark  {
+    --background: 203 28% 10%;
+    --foreground: 203 5% 91%;
+    --card: 203 28% 10%;
+    --card-foreground: 203 5% 91%;
+    --popover: 203 28% 5%;
+    --popover-foreground: 203 5% 91%;
+    --primary: 203 71% 30%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 203 28% 20%;
+    --secondary-foreground: 0 0% 100%;
+    --muted: 165 28% 25%;
+    --muted-foreground: 203 5% 65%;
+    --accent: 165 28% 25%;
+    --accent-foreground: 203 5% 91%;
+    --destructive: 0 50% 50%;
+    --destructive-foreground: 203 5% 91%;
+    --border: 203 28% 50%;
+    --input: 203 28% 50%;
+    --ring: 203 71% 30%;
+    --radius: 0.5rem;
+  } */
+  
+
+  /* THEME UN PEU VIOLET */
+  /* :root  {
+    --background: 257 10% 95%;
+    --foreground: 257 5% 10%;
+    --card: 257 10% 90%;
+    --card-foreground: 257 5% 15%;
+    --popover: 257 10% 95%;
+    --popover-foreground: 257 95% 10%;
+    --primary: 257 84% 30%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 257 10% 89%;
+    --secondary-foreground: 0 0% 0%;
+    --muted: 219 10% 89%;
+    --muted-foreground: 257 5% 40%;
+    --accent: 219 10% 89%;
+    --accent-foreground: 257 5% 15%;
+    --destructive: 0 50% 50%;
+    --destructive-foreground: 257 5% 90%;
+    --border: 257 20% 82%;
+    --input: 257 20% 50%;
+    --ring: 257 84% 30%;
+    --radius: 0.3rem;
+  }
+  .dark  {
+    --background: 257 10% 10%;
+    --foreground: 257 5% 90%;
+    --card: 257 10% 10%;
+    --card-foreground: 257 5% 90%;
+    --popover: 257 10% 5%;
+    --popover-foreground: 257 5% 90%;
+    --primary: 257 84% 30%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 257 10% 20%;
+    --secondary-foreground: 0 0% 100%;
+    --muted: 219 10% 25%;
+    --muted-foreground: 257 5% 65%;
+    --accent: 219 10% 25%;
+    --accent-foreground: 257 5% 90%;
+    --destructive: 0 50% 50%;
+    --destructive-foreground: 257 5% 90%;
+    --border: 257 20% 50%;
+    --input: 257 20% 50%;
+    --ring: 257 84% 30%;
+    --radius: 0.3rem;
+  } */
+  
+
+
+  /* THEME UN POIL PLUS BLEU */
+  :root  {
+    --background: 196 45% 95%;
+    --foreground: 196 5% 10%;
+    --card: 196 45% 90%;
+    --card-foreground: 196 5% 15%;
+    --popover: 196 45% 95%;
+    --popover-foreground: 196 95% 10%;
+    --primary: 196 86% 57%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 196 30% 71%;
+    --secondary-foreground: 0 0% 0%;
+    --muted: 158 30% 85%;
+    --muted-foreground: 196 5% 40%;
+    --accent: 158 30% 80%;
+    --accent-foreground: 196 5% 15%;
+    --destructive: 0 50% 50%;
+    --destructive-foreground: 196 5% 90%;
+    --border: 196 30% 71%;
+    --input: 196 30% 50%;
+    --ring: 196 86% 57%;
+    --radius: 0.3rem;
+  }
+  .dark  {
+    --background: 196 45% 10%;
+    --foreground: 196 5% 90%;
+    --card: 196 45% 10%;
+    --card-foreground: 196 5% 90%;
+    --popover: 196 45% 5%;
+    --popover-foreground: 196 5% 90%;
+    --primary: 196 86% 57%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 196 30% 20%;
+    --secondary-foreground: 0 0% 100%;
+    --muted: 158 30% 25%;
+    --muted-foreground: 196 5% 65%;
+    --accent: 158 30% 25%;
+    --accent-foreground: 196 5% 90%;
+    --destructive: 0 50% 50%;
+    --destructive-foreground: 196 5% 90%;
+    --border: 196 30% 50%;
+    --input: 196 30% 50%;
+    --ring: 196 86% 57%;
+    --radius: 0.3rem;
+  }
+
+  
+}
