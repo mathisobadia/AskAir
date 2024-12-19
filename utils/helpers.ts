@@ -27,11 +27,7 @@ export const getWorkspaceIfUserHasAccess = async (workspaceId: string) => {
       workspaceUsers: {
         where: eq(WorkspaceUser.workspaceId, workspaceId),
         with: {
-          workspace: {
-            with: {
-              subscription: true,
-            },
-          },
+          workspace: true,
         },
       },
     },

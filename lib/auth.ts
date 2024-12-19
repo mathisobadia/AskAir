@@ -3,7 +3,6 @@ import Email from "next-auth/providers/nodemailer";
 import { DrizzleAdapter } from "@auth/drizzle-adapter";
 import * as schema from "@/db/schema";
 import { db } from "@/db";
-import { sendAdminNotification } from "@/utils/email-notifications";
 
 export const {
   handlers: { GET, POST },
@@ -38,9 +37,5 @@ export const {
       return session;
     },
   },
-  events: {
-    createUser: async ({ user }) => {
-      await sendAdminNotification(user as schema.User);
-    },
-  },
+  events: {},
 });
