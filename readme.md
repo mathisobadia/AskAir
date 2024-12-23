@@ -1,3 +1,10 @@
+<p align="center">
+  <a href="https://askair.ai">
+  <img width="600" alt="Automatically extract document data into Airtable entries with
+AI-powered automation. Save time and eliminate manual data entry." src="https://github.com/user-attachments/assets/1251177f-cb2f-4bd2-a626-b38df6586a9d">
+  </a>
+</p>
+
 # AskAir
 
 Automatically extract document data into Airtable entries with
